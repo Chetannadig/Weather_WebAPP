@@ -340,12 +340,12 @@ class WeatherApp {
         
         // Build card HTML structure
         card.innerHTML = `
-            <div class="font-semibold mb-2">${dayName}</div>
-            <div class="text-sm text-gray-200 mb-3">${dateStr}</div>
-            <div class="text-3xl mb-3">${weatherIcon}</div>
-            <div class="font-bold text-lg mb-2">${Math.round(forecast.main.temp)}°C</div>
-            <div class="text-sm text-gray-200 mb-1">💨 ${forecast.wind.speed} m/s</div>
-            <div class="text-sm text-gray-200">💧 ${forecast.main.humidity}%</div>
+            <div class="font-semibold mb-2 text-black">${dayName}</div>
+            <div class="text-sm  mb-3 text-green ">${dateStr}</div>
+            <div class="text-3xl mb-3 text-black">${weatherIcon}</div>
+            <div class="font-bold text-lg mb-2 text-black">${Math.round(forecast.main.temp)}°C</div>
+            <div class="text-sm  mb-1 text-black">💨 ${forecast.wind.speed} m/s</div>
+            <div class="text-sm  text-black">💧 ${forecast.main.humidity}%</div>
         `;
 
         return card;
